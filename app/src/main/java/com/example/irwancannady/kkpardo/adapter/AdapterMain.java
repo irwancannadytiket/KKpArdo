@@ -37,7 +37,8 @@ public class AdapterMain extends RecyclerView.Adapter<AdapterMain.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         EntityRequest entityRequest = entityRequests.get(position);
-        holder.mTextViewRumah.setText(entityRequest.getId());
+        holder.mTextViewRumah.setText(entityRequest.getNama());
+        holder.mSwitch.setChecked(entityRequest.getStatus());
     }
 
     @Override

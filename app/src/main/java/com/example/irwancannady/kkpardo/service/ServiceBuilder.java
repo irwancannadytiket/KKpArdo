@@ -20,6 +20,7 @@ public class ServiceBuilder {
     public ServiceBuilder(){
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(ConstanKey.BASE_URL)
+                .client(confgureTimeOut())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

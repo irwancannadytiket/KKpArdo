@@ -2,6 +2,8 @@ package com.example.irwancannady.kkpardo.service;
 
 import com.example.irwancannady.kkpardo.model.EntityRequest;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
@@ -13,10 +15,10 @@ import retrofit2.http.Query;
 
 public interface ServiceAPI {
 
-    public final String END_POINT = "" ;
+    public final String END_POINT = "questions" ;
 
     @GET(END_POINT)
-    Call<EntityRequest> getDataTime();
+    Call<List<EntityRequest>> getDataTime();
 
     @POST()
     Call<EntityRequest> postToAPI(@Query("") String a,

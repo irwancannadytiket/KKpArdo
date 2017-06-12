@@ -6,5 +6,5 @@ package com.example.irwancannady.kkpardo.util;
 
 public class ConstanKey {
 
-    public static final String BASE_URL = "";
+    public static final String BASE_URL = "https://private-2b349-kkpardo.apiary-mock.com/";
 }
